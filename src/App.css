@@ -42,6 +42,11 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+section[id] {
+  scroll-margin-top: calc(var(--nav-height) + 20px); 
+}
+
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
@@ -101,7 +106,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; }
 .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
 .about-text-section { margin-bottom: 80px; border-bottom: 1px solid var(--border-color); padding-bottom: 60px; }
 .about-text-section p { font-size: 1.1rem; line-height: 1.8; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
-.tech-stack-section h3 { margin-bottom: 50px; font-size: 2rem; text-align: center; }
+.tech-stack-section h3 { margin-bottom: 50px; font-size: 1.5rem; text-align: center; }
 
 .tech-icons-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px; }
 .tech-item { display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease; padding: 10px; }
