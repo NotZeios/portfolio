@@ -14,13 +14,14 @@ const Home = () => {
             Mel Tristan Baquiano.
           </h1>
           
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--text-muted)', marginBottom: '30px', lineHeight: '1.2' }}>
-            Aspiring <span className="highlight">Software Engineer</span>.
+          <h2 style={{ fontSize: '2.2rem', color: 'var(--text-muted)', marginBottom: '30px', lineHeight: '1.3' }}>
+            Front-End Specialist. <br />
+            Aspiring <span className="highlight">Full-Stack Developer</span>.
           </h2>
           
           <p>
-            I build accessible, pixel-perfect, and high-performance web and mobile applications.
-            Currently focused on back-end development and AI integration.
+            I build accessible, user-centric web and mobile interfaces using modern tools like React. 
+            Right now, I'm leveling up my back-end architecture skills with Python to deliver robust applications.
           </p>
           
           <a href="#projects" className="cta-btn">View My Work</a>

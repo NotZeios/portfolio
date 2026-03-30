@@ -27,10 +27,9 @@ const About = () => {
             About Me
           </h2>
           <p>
-            I am a graduating Computer Science student at Holy Angel University. 
-            I have a strong passion for software development, specifically in 
-            building responsive mobile apps and scalable web applications.
-            I enjoy solving complex algorithmic problems and turning ideas into reality through code.
+            I'm a graduating Computer Science student at Holy Angel University, dedicated to developing responsive mobile apps and scalable web applications. 
+            I believe that great software is both beautifully accessible to users and structurally sound under the hood. Combining a love for algorithmic problem-solving with 
+            certified training in effective leadership, my goal is to turn innovative ideas into reality while continuously expanding my technical toolkit.
           </p>
         </div>
 
