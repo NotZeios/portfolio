@@ -14,7 +14,7 @@ const Involvement = () => {
   ];
 
   return (
-    <section id="involvement" className="section-padding" style={{ paddingTop: '0' }}>
+    <section id="involvement" className="section-padding">
       <div className="container">
         <div className="experience-group">
           <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>

@@ -28,10 +28,14 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding">
       <div className="container">
-        <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '10px' }}>
           <FaPaperPlane style={{ marginRight: '10px', color: 'var(--primary)' }} />
           Get In Touch
         </h2>
+        <p style={{ textAlign: 'center', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 15px auto' }}>
+          Have a question, a project idea, or just want to say hi? Drop me a message below and I'll get back to you as soon as possible!
+        </p>
+
         <div className="contact-container">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -46,7 +50,7 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" className="form-textarea" placeholder="Write your message here..." required></textarea>
+              <textarea id="message" name="message" rows="5" className="form-textarea" placeholder="Enter your message here..." required></textarea>
               <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
             <button type="submit" className="submit-btn" disabled={state.submitting}>

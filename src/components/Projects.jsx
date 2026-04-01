@@ -6,23 +6,30 @@ const Projects = () => {
     {
       title: "Pyalung Tamu",
       desc: "A mobile Flutter application that features minigames to raise awareness of the Kapampangan language and culture.",
-      tags: ["Flutter", "Supabase", "Netlify"],
+      tags: ["Flutter", "Supabase"],
       repoLink: "https://github.com/luizaki/pyalung-tamu",
       demoLink: "https://pyalung-tamu.netlify.app/"
     },
     {
       title: "Member Management System",
       desc: "A web-based application featuring a user-friendly dashboard for efficiently managing records through full CRUD (Create, Read, Update, Delete) operations.",
-      tags: ["JavaScript", "CSS", "Vite", "React"],
+      tags: ["JavaScript", "CSS", "React"],
       repoLink: "https://github.com/luizaki/apsi-badge-exam",
       demoLink: "https://luizaki.github.io/apsi-badge-exam/" 
     },
     {
       title: "Chicken Banana Game",
       desc: "An interactive React-based game inspired by Minesweeper. Features custom game logic, state management, and sound effects.",
-      tags: ["Vite", "React", "CSS"],
+      tags: ["React", "CSS"],
       repoLink: "https://github.com/NotZeios/chicken-banana-game",
       demoLink: "https://chicken-banana-game.vercel.app/"
+    },
+    {
+      title: "Neurorite",
+      desc: "A feature-rich note taking application built with Flutter, designed for seamless note management and organization.",
+      tags: ["Flutter", "Firebase"],
+      repoLink: "https://github.com/userkace/neurorite",
+      demoLink: "https://neurorite.pages.dev/"
     }
   ];
 
