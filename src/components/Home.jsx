@@ -27,7 +27,8 @@ const Home = () => {
           </h2>
           
           <p style={{ marginBottom: '30px' }}>
-            Crafting accessible, user-focused interfaces with React. Moving toward full-stack architecture through Python and scalable back-end design.
+            Computer Science graduate with a foundation in system administration and network operations, currently specializing in 
+            front-end development while bridging the gap to full-stack architecture.
           </p>
           
           <div className="hero-buttons">

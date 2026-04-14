@@ -127,7 +127,6 @@ h2 svg, h3 svg {
 .nav-links { display: flex; gap: 25px; }
 .nav-links a { font-weight: 500; color: var(--text-muted); }
 .nav-links a:hover { color: var(--primary); }
-@media (max-width: 768px) { .nav-links { display: none; } }
 
 .resume-btn {
   padding: 10px 24px; background: var(--primary); color: var(--primary-text);
@@ -161,6 +160,19 @@ h2 svg, h3 svg {
 .switch-icon { font-size: 12px; }
 .switch-dark .switch-icon { color: #000; }
 .switch-light .switch-icon { color: #f59e0b; }
+
+/* Hide the hamburger icon on desktop */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-icon:hover {
+  color: var(--primary);
+}
 
 /* 5. HERO/HOME SECTION */
 .hero {
@@ -277,10 +289,6 @@ h2 svg, h3 svg {
   filter: contrast(1.05) grayscale(0%); 
 }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
-@media (max-width: 768px) { 
-  .hero-container { flex-direction: column-reverse; text-align: center; } 
-  .hero-text h1 { font-size: 2.2rem; } 
-}
 
 /* 6. ABOUT & TECH STACK */
 .about-content { max-width: 900px; margin: 0 auto; text-align: center; }
@@ -381,3 +389,110 @@ h2 svg, h3 svg {
 }
 .copyright { color: var(--text-muted); font-size: 0.9rem; }
 @keyframes fadeIn { from { opacity: 0; transform: translate(-50%, 5px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* 11. RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .hero-container {
+    gap: 2rem;
+  }
+  
+  h1 { font-size: 3.5rem !important; }
+  h2 { font-size: 1.8rem !important; }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0;    
+    left: 0;      
+    width: 100%; 
+    z-index: 1000;
+  }
+  
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .nav-actions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    flex-direction: column;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--border-color);
+    transform: translateY(-20%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  .nav-actions.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 14px;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .status-badge {
+    margin: 0 auto 20px auto;
+  }
+
+  .avatar-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 { font-size: 2.8rem !important; }
+  h2 { font-size: 1.5rem !important; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem !important; }
+  h2 { font-size: 1.2rem !important; }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

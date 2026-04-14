@@ -28,9 +28,9 @@ const About = () => {
             About Me
           </h2>
           <p>
-            I'm a graduating Computer Science student at Holy Angel University, dedicated to developing responsive mobile apps and scalable web applications. 
-            I believe that great software is both beautifully accessible to users and structurally sound under the hood. Combining a love for algorithmic problem-solving with 
-            certified training in effective leadership, my goal is to turn innovative ideas into reality while continuously expanding my technical toolkit.
+            With a foundation in system administration, IT support, and network operations, I approach development with a focus on reliability. 
+            My experience as a Junior NOC Engineer intern taught me how to build things that last. I now apply that mindset to creating reliable, accessible 
+            applications while expanding my toolkit toward full-stack architecture.
           </p>
         </div>
 
