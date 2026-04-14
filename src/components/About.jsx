@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaReact, FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaFigma, FaUser, FaCode } from 'react-icons/fa';
-import { SiFlutter, SiDart, SiMysql } from 'react-icons/si';
+import { SiFlutter, SiDart, SiMysql, SiSupabase } from 'react-icons/si';
 
 const About = () => {
   const techStack = [
@@ -13,6 +13,7 @@ const About = () => {
     { name: "HTML5", icon: <FaHtml5 /> },
     { name: "CSS3", icon: <FaCss3Alt /> },
     { name: "SQL", icon: <SiMysql /> },
+    { name: "Supabase", icon: <SiSupabase /> },
     { name: "Git", icon: <FaGitAlt /> },
     { name: "Figma", icon: <FaFigma /> },
   ];
@@ -34,10 +35,10 @@ const About = () => {
         </div>
 
         <div className="tech-stack-section">
-          <h3 style={{ marginBottom: '40px' }}>
+          <h2 style={{ marginBottom: '40px' }}>
             <FaCode style={{ marginRight: '10px', color: 'var(--primary)' }} />
-            My Tech Stack
-          </h3>
+            Tech Stack
+          </h2>
           <div className="tech-icons-grid">
             {techStack.map((tech, index) => (
               <div key={index} className="tech-item" title={tech.name}>

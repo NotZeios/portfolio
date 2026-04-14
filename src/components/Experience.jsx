@@ -21,7 +21,7 @@ const Experience = () => {
         <div className="experience-group">
           <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
             <FaBriefcase style={{ marginRight: '10px', color: 'var(--primary)' }} /> 
-            Work Experience
+            Experience
           </h2>
           <div className="timeline">
             {workExperience.map((item, index) => (

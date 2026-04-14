@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
+import { FaSun, FaMoon } from 'react-icons/fa';
+
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -24,8 +26,23 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      
+      <Navbar />
+      <div className="floating-theme-wrapper">
+        <button 
+          onClick={toggleTheme} 
+          className={`theme-switch ${theme === 'dark' ? 'switch-dark' : 'switch-light'}`}
+          aria-label="Toggle Theme"
+        >
+          <div className="switch-handle">
+            {theme === 'dark' ? (
+              <FaMoon className="switch-icon" />
+            ) : (
+              <FaSun className="switch-icon" />
+            )}
+          </div>
+        </button>
+      </div>
+
       <main>
         <Home />
         <About />
