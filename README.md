@@ -1,18 +1,22 @@
-# React + Vite
+# 👨‍💻 Mel Tristan Baquiano | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance personal portfolio built to showcase my expertise in **Front-End Development**. This project emphasizes clean code, accessible UI, and a premium monochrome aesthetic.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* **Custom Monochrome UI:** A sleek, minimal dark/light theme designed for professional readability.
+* **Scroll Reveal Animations:** Interactive sections that fade into view using the `Intersection Observer API`.
+* **Tactile Interactions:** Smooth hover effects and transitions on all primary actions.
+* **Optimized Performance:** Built with **Vite** for near-instant load times and efficient bundling.
+* **Responsive Design:** A fluid layout that ensures a seamless experience across mobile, tablet, and desktop.
+* **Functional Contact Form:** Integrated with **Formspree** for direct and reliable message delivery.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** [React.js](https://reactjs.org/)
+* **Styling:** CSS3 (using Custom Properties/Variables)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Deployment:** [Vercel](https://vercel.com/)
