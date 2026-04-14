@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Home = () => {
+  const resumeLink = "https://drive.google.com/file/d/1y7vrsQq92TBwrL4qVK_dUVq4-EoJIamI/view?usp=sharing";
+
   return (
     <section id="home" className="hero">
-      <div className="hero-container">
+      <div className="hero-container reveal">
         
         <div className="hero-text">
           <div className="status-badge">
@@ -29,8 +31,14 @@ const Home = () => {
           </p>
           
           <div className="hero-buttons">
-            <a href="#projects" className="cta-btn">View My Work</a>
-            <a href="#contact" className="cta-btn cta-btn-outline">Contact Me</a>
+            <a 
+              href={resumeLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="cta-btn"
+            >
+              View Resume
+            </a>
           </div>
         </div>
         

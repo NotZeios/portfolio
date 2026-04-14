@@ -8,7 +8,7 @@ const Contact = () => {
   if (state.succeeded) {
     return (
       <section id="contact" className="section-padding">
-        <div className="container">
+        <div className="container reveal">
           <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
             <FaPaperPlane style={{ marginRight: '10px', color: 'var(--primary)' }} />
             Get In Touch
@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-padding">
-      <div className="container">
+      <div className="container reveal">
         <h2 style={{ textAlign: 'center', marginBottom: '10px' }}>
           <FaPaperPlane style={{ marginRight: '10px', color: 'var(--primary)' }} />
           Get In Touch
@@ -53,7 +53,15 @@ const Contact = () => {
               <textarea id="message" name="message" rows="5" className="form-textarea" placeholder="Enter your message here..." required></textarea>
               <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
-            <button type="submit" className="submit-btn" disabled={state.submitting}>
+            <button 
+              type="submit" 
+              className="submit-btn" 
+              disabled={state.submitting}
+              style={{ 
+                cursor: state.submitting ? 'not-allowed' : 'pointer',
+                opacity: state.submitting ? '0.7' : '1'
+              }}
+            >
               {state.submitting ? "Sending..." : "Send Message"}
             </button>
           </form>

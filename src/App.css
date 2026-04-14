@@ -57,10 +57,47 @@ h2 svg, h3 svg {
   transform: translateY(-2px);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color); 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted); 
+}
+
+::selection {
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
+::-moz-selection { /* For Firefox support */
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
 /* 3. LAYOUT UTILITIES */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .section-padding { padding: 80px 0; }
 .highlight { color: var(--primary); }
+.reveal {
+  opacity: 0;
+  transform: translateY(40px); 
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* 4. NAVIGATION & THEME SWITCH */
 .navbar {
@@ -186,6 +223,20 @@ h2 svg, h3 svg {
   transition: all 0.2s ease; text-align: center;
 }
 .cta-btn-outline { background: transparent; color: var(--text-main); border: 2px solid var(--border-color); }
+.cta-btn:hover {
+  background: transparent;
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn-outline:hover {
+  background: var(--primary);
+  color: var(--primary-text);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 .hero-avatar {
   flex: 1; 
   max-width: 420px; 

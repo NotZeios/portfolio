@@ -10,7 +10,6 @@ const Projects = () => {
       repoLink: "https://github.com/luizaki/pyalung-tamu",
       demoLink: "https://pyalung-tamu.netlify.app/"
     },
-
     {
       title: "Member Management System",
       desc: "A web-based application featuring a user-friendly dashboard for efficiently managing records through full CRUD (Create, Read, Update, Delete) operations.",
@@ -18,7 +17,6 @@ const Projects = () => {
       repoLink: "https://github.com/luizaki/apsi-badge-exam",
       demoLink: "https://luizaki.github.io/apsi-badge-exam/" 
     },
-    
     {
       title: "Neurorite",
       desc: "A feature-rich note taking application built with Flutter, designed for seamless note management and organization.",
@@ -30,7 +28,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section-padding">
-      <div className="container">
+      <div className="container reveal">
         <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
           <FaLaptopCode style={{ marginRight: '10px', color: 'var(--primary)' }} />
           Featured Projects

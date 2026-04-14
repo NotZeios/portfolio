@@ -24,6 +24,21 @@ function App() {
     document.body.className = theme === 'light' ? 'light-mode' : '';
   }, [theme]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    const hiddenElements = document.querySelectorAll('.reveal');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect(); 
+  }, []);
+
   return (
     <div className="app">
       <Navbar />

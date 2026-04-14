@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container reveal">
         <div className="social-links">
           
           <button className="social-btn" onClick={() => handleCopy(SOCIALS.email, 'email')} aria-label="Copy Email">

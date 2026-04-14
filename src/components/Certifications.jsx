@@ -61,7 +61,7 @@ const Certifications = () => {
 
   return (
     <section id="certifications" className="section-padding" style={{ backgroundColor: 'var(--card-bg)' }}>
-      <div className="container">
+      <div className="container reveal">
         <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
           <FaCertificate style={{ marginRight: '10px', color: 'var(--primary)' }} />
           Certifications

@@ -17,7 +17,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="section-padding">
-      <div className="container">
+      <div className="container reveal">
         <div className="experience-group">
           <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>
             <FaBriefcase style={{ marginRight: '10px', color: 'var(--primary)' }} /> 
