@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => {
-  const resumeLink = "https://drive.google.com/file/d/1y7vrsQq92TBwrL4qVK_dUVq4-EoJIamI/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1AlZEs70RRqmgNucvn4e0NilTg6a-Qf3B/view?usp=sharing";
 
   return (
     <section id="home" className="hero">
