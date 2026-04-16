@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   
-  const resumeLink = "https://drive.google.com/file/d/1AlZEs70RRqmgNucvn4e0NilTg6a-Qf3B/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/14iE6uRA6FmIEbE-UQEMlabpJXQsgTrqa/view?usp=sharing";
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
